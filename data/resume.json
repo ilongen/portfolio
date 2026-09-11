@@ -94,7 +94,7 @@
       "name": "Integração NFS-e/CT-e Agrotitan ",
       "category": "RPA / Integração ERP",
       "problem": "Ingestão manual de notas fiscais de serviço no ERP Agrotitan (Sankhya), sujeita a erros e lentidão.",
-      "solution": "Automação em .NET via plataforma Nexxum que ingere NFS-e diretamente no ERP, utilizando FlaUI/UIA3 para interação com campos Win32 (Delphi) via clipboard.",
+      "solution": "Automação em .NET via plataforma Nexxum que ingere NFS-e e CT-e diretamente no ERP, utilizando FlaUI/UIA3 para interação com campos Win32 (Delphi) via clipboard.",
       "technicalHighlights": [
         "Automação de UI Win32/Delphi com FlaUI e UIA3",
         "Resolução de bloqueio de SendInput por isolamento de sessão do Windows (Scheduled Task + LogonType Password), corrigido com keepalive de sessão interativa e auto-logon"
