@@ -1,0 +1,167 @@
+{
+  "personalInfo": {
+    "fullName": "Iago Longen Mendonça",
+    "title": "Desenvolvedor Júnior | Backend .NET & RPA",
+    "phone": "+55 47 98807-1571",
+    "email": "iago.mendonca_2005@hotmail.com",
+    "location": "Joinville, SC - Brasil",
+    "linkedin": "https://www.linkedin.com/in/iagolongen/",
+    "github": "https://github.com/ilongen",
+    "summary": "Desenvolvedor júnior com foco em backend .NET ou Java, automação de processos (RPA) e integrações fiscais/ERP. Experiência prática resolvendo problemas reais de sustentação de sistemas críticos em ambiente corporativo."
+  },
+  "experience": [
+    {
+      "company": "Martinelli Tech",
+      "location": "Joinville",
+      "role": "Desenvolvedor Júnior BackEnd .NET",
+      "startDate": "2026-06",
+      "endDate": "2026-09",
+      "current": false,
+      "description": "Atuei no projeto Nexxum, focada em desenvolvimento backend com .NET, criação e manutenção de APIs de integração entre sistemas, desenvolvimento de integrações fiscais e sustentação de aplicações. Participação em testes de integração e evolução contínua das soluções.",
+      "highlights": [
+        "APIs de integração entre sistemas em .NET",
+        "Integrações fiscais e sustentação de aplicações",
+        "Implementação de testes de integração",
+        "Integração e2e com sistemas de terceiros (ERP, NF-e, NFS-e, CT-e.)"
+      ]
+    },
+    {
+      "company": "Martinelli Tech",
+      "location": "Joinville",
+      "role": "Desenvolvedor Júnior RPA",
+      "startDate": "2026-02",
+      "endDate": "2026-06",
+      "current": false,
+      "description": "Desenvolvimento júnior de RPA com foco em automação de processos, manutenção e evolução de robôs. Trabalho com .NET e ferramentas do pacote Office em ambiente corporativo, além de controle, versionamento e manutenção de servidores.",
+      "highlights": [
+        "Automação de processos com .NET",
+        "Manutenção e evolução de robôs em produção",
+        "Controle e versionamento de servidores"
+      ]
+    },
+    {
+      "company": "IBR Tecnologia",
+      "location": "Joinville",
+      "role": "Analista de Suporte Pleno",
+      "startDate": "2024-08",
+      "endDate": "2026-02",
+      "current": false,
+      "description": "Colaboração com time de suporte para atendimentos, configurações e importações de clientes que utilizam o software DESMONTE, serviço especializado para companhias de desmonte em todo o Brasil.",
+      "highlights": []
+    },
+    {
+      "company": "Athos Soluções",
+      "location": "Joinville",
+      "role": "Analista de MIS / Auxiliar de Cobrança",
+      "startDate": "2024-01",
+      "endDate": "2024-04",
+      "current": false,
+      "description": "Participação na equipe de gestão, contribuindo com relatórios de produção da parte operacional usando Excel. Início em desenvolvimento de processos automatizados com Python.",
+      "highlights": []
+    },
+    {
+      "company": "ERZINGER",
+      "location": "Joinville",
+      "role": "Jovem Aprendiz",
+      "startDate": "2023-01",
+      "endDate": "2023-12",
+      "current": false,
+      "description": "Aprendizagem Industrial de Desenhista Mecânico.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "UNIVILLE",
+      "degree": "Engenharia de Software",
+      "location": "Joinville",
+      "startDate": "2024-08",
+      "endDate": null,
+      "current": true
+    },
+    {
+      "institution": "SENAI",
+      "degree": "Técnico em Desenvolvimento de Sistemas",
+      "location": "Joinville",
+      "startDate": "2022-08",
+      "endDate": "2024-06",
+      "current": false
+    }
+  ],
+  "projects": [
+    {
+      "id": "integracao-agrotitan-nfse-cte",
+      "name": "Integração NFS-e/CT-e Agrotitan ",
+      "category": "RPA / Integração ERP",
+      "problem": "Ingestão manual de notas fiscais de serviço no ERP Agrotitan (Sankhya), sujeita a erros e lentidão.",
+      "solution": "Automação em .NET via plataforma Nexxum que ingere NFS-e diretamente no ERP, utilizando FlaUI/UIA3 para interação com campos Win32 (Delphi) via clipboard.",
+      "technicalHighlights": [
+        "Automação de UI Win32/Delphi com FlaUI e UIA3",
+        "Resolução de bloqueio de SendInput por isolamento de sessão do Windows (Scheduled Task + LogonType Password), corrigido com keepalive de sessão interativa e auto-logon"
+      ],
+      "stack": [".NET", "FlaUI", "UIA3"]
+    },
+    {
+      "id": "sap-fiori-automation",
+      "name": "Automação SAP Fiori/WebGUI",
+      "category": "RPA / Automação Web",
+      "problem": "Processos manuais recorrentes dentro do SAP Fiori exigindo intervenção humana repetitiva.",
+      "solution": "Framework próprio (WebAutomationJS) em .NET para automação de navegador sobre o SAP Fiori, com seletores XPath dinâmicos.",
+      "technicalHighlights": [
+        "XPath para remoção de tokens em smart filter bar e campos de conta contábil (GL)",
+        "Padrão contains(@id,...) para IDs dinâmicos do SAP",
+        "Uso de String.FromCharCode(34) para contornar escaping de string em .NET/JS"
+      ],
+      "stack": [".NET", "JavaScript", "SAP Fiori"]
+    },
+    {
+      "id": "remessas-boletos",
+      "name": "Processamento de Remessas e Boletos ",
+      "category": "RPA / Sustentação",
+      "problem": "Robô de processamento de remessas e boletos apresentando falhas de leitura e filtros incorretos, gerando dados inconsistentes.",
+      "solution": "Debugging e correção de lógica LINQ, tratamento de tipos de dados e extração de datas em nomes de arquivo PDF.",
+      "technicalHighlights": [
+        "Correção de operadores lógicos em filtros LINQ sobre condições de pagamento",
+        "Correção de mismatch de tipo em DateTime.TryParse",
+        "Fix de bug onde números de boleto eram interpretados como datas, via filtro de intervalo de ano válido"
+      ],
+      "stack": [".NET", "LINQ", ".NET"]
+    },
+    {
+      "id": "email-processing",
+      "name": "Processamento de Notas Fiscais por E-mail",
+      "category": "RPA / Integração",
+      "problem": "Anexos de e-mail com notas fiscais e boletos precisavam ser organizados manualmente em pastas do OneDrive.",
+      "solution": "Serviço em .NET que processa anexos de e-mail automaticamente e organiza os arquivos na estrutura correta do OneDrive.",
+      "technicalHighlights": [
+        "Lógica de correspondência entre nome de arquivo e assunto do e-mail",
+        "Tratamento de casos nulos em anexos",
+        "Correção de comparação de strings com variações de texto"
+      ],
+      "stack": [".NET", "Microsoft Graph / OneDrive"]
+    },
+    {
+      "id": "cnpj-lookup-tooling",
+      "name": "Ferramenta de Consulta em Lote de CNPJ",
+      "category": "Ferramenta interna / RPA",
+      "problem": "Necessidade de consultar dados cadastrais de múltiplos CNPJs em massa para uso em processos de RPA.",
+      "solution": "Ferramenta com duas versões: Python (BrasilAPI, retry com rate-limit, saída CSV) e .NET (saída Excel via EPPlus, colunas dinâmicas de QSA, execução síncrona compatível com ambiente de RPA).",
+      "technicalHighlights": [
+        "Integração com BrasilAPI",
+        "Geração de planilhas Excel dinâmicas com EPPlus"
+      ],
+      "stack": ["Python", ".NET", "EPPlus", "BrasilAPI"]
+    }
+  ],
+  "skills": {
+    "languages": ["Java","SQL Server","PostgreSQL",".NET", "Python", "JavaScript"],
+    "frameworks": ["FlaUI", "UIA3", "WebAutomationJS"],
+    "tools": ["SAP Fiori/WebGUI", "EPPlus", "Excel", "Office 365"],
+    "concepts": ["RPA", "Integrações ERP/Fiscais", "Testes de Integração", "LGPD/GDPR"],
+    "soft": ["Boa comunicação", "Proatividade", "Resolutivo", "Aprendizado contínuo"]
+  },
+  "languages": [
+    { "name": "Português", "level": "Nativo" },
+    { "name": "Inglês", "level": "A2" }
+  ]
+}
